@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 #the view function
 def home():
-    return "<h1>Welcome to Flatiron Cars</h1>"
+    return "Welcome to Flatiron Cars"
 
 
 
@@ -18,9 +18,9 @@ def home():
 def model(model):
     existing_models = ['Beedle', 'Crossroads', 'M2', 'Panique']
     if model in existing_models:
-        return f"<h1>Flatiron {model} is in our fleet</h1>"
+        return f"Flatiron {model} is in our fleet"
     else:
-        return f"<h1>No models called {model} exists in our catalog</h1>"
+        return f"No models called {model} exists in our catalog"
 
 
 
