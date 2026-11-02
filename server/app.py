@@ -3,13 +3,18 @@ from flask import Flask
 app = Flask(__name__)
 
 
-
+# root route(home)
 @app.route('/')
+#the view function
 def home():
     return "<h1>Welcome to Flatiron Cars</h1>"
 
 
+
+#the variable route
 @app.route('/<model>')
+
+#the view function
 def model(model):
     existing_models = ['Beedle', 'Crossroads', 'M2', 'Panique']
     if model in existing_models:
